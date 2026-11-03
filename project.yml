@@ -1,0 +1,33 @@
+name: ContaMoedas
+options:
+  bundleIdPrefix: com.mauricio.contamoedas
+  deploymentTarget:
+    iOS: "17.0"
+
+settings:
+  base:
+    DEVELOPMENT_TEAM: "G84N39Y2NX"
+    CODE_SIGN_STYLE: Automatic
+    SWIFT_VERSION: "5.0"
+
+targets:
+  ContaMoedas:
+    type: application
+    platform: iOS
+    sources:
+      - path: Sources
+    info:
+      path: Info.plist
+      properties:
+        CFBundleDisplayName: "Conta Moedas BR"
+        NSCameraUsageDescription: "Precisamos da câmera para escanear e contar as moedas de Real (R$) automaticamente."
+        UILaunchScreen: {}
+        UIRequiresFullScreen: YES
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+    settings:
+      base:
+        PRODUCT_NAME: "ContaMoedas"
+        PRODUCT_BUNDLE_IDENTIFIER: "com.mauricio.contamoedas.br"
+        INFOPLIST_FILE: "Info.plist"
+        GENERATE_INFOPLIST_FILE: NO

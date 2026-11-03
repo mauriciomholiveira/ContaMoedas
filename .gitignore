@@ -1,0 +1,18 @@
+# Xcode
+.DS_Store
+*/.DS_Store
+build/
+DerivedData/
+*.xcuserstate
+project.xcworkspace/
+xcuserdata/
+*.xcscmblueprint
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+
+# Temporary files
+*.swp
+*~
